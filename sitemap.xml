@@ -606,12 +606,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.bnbchain.org/bnb_smart_chain/governance/index.html</loc>
+         <loc>https://docs.bnbchain.org/bnb_smart_chain/governance/apis.html</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.bnbchain.org/bnb_smart_chain/governance/apis.html</loc>
+         <loc>https://docs.bnbchain.org/bnb_smart_chain/governance/overview.html</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -636,22 +636,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.bnbchain.org/bnb_smart_chain/staking/index.html</loc>
-         <lastmod>2024-05-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.bnbchain.org/bnb_smart_chain/staking/developer-guide.html</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.bnbchain.org/bnb_smart_chain/staking/user-guide.html</loc>
+         <loc>https://docs.bnbchain.org/bnb_smart_chain/staking/overview.html</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.bnbchain.org/bnb_smart_chain/validator/index.html</loc>
+         <loc>https://docs.bnbchain.org/bnb_smart_chain/staking/user-guide.html</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -667,6 +662,11 @@
     </url>
     <url>
          <loc>https://docs.bnbchain.org/bnb_smart_chain/validator/manage-keys.html</loc>
+         <lastmod>2024-05-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.bnbchain.org/bnb_smart_chain/validator/overview.html</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
