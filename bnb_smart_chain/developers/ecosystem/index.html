@@ -1,0 +1,2360 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="BNB Chain is a leading blockchain ecosystem designed to support the growing demands of the decentralized web (Web3).">
+      
+      
+        <meta name="author" content="BNB Chain">
+      
+      
+        <link rel="canonical" href="https://unclezoro.github.io/bnbchain-docsite/bnb_smart_chain/developers/ecosystem/">
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../rpc/">
+      
+      
+      <link rel="icon" href="../../../assets/bnb.svg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+    
+        <title>Ecosystem - BNB Chain Documentation</title>
+    
+
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap">
+    
+      <link rel="stylesheet" href="../../../assets/style/index.css">
+    
+      <link rel="stylesheet" href="../../../assets/style/components/banner.css">
+    
+      <link rel="stylesheet" href="../../../assets/style/components/nav.css">
+    
+      <link rel="stylesheet" href="../../../assets/style/components/sidebar.css">
+    
+      <link rel="stylesheet" href="../../../assets/style/components/content.css">
+    
+      <link rel="stylesheet" href="../../../assets/style/components/footer-nav.css">
+    
+      <link rel="stylesheet" href="../../../assets/style/components/footer.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bnb-chain-development-tools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div>
+    BNB Beacon Chain is sunsetting. <a href="https://www.bnbchain.org/en/bnb-chain-fusion" target="_blank">Check for
+    more details</a>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+    <nav class="md-header__inner md-grid" aria-label="Header">
+
+        <!-- Link to home -->
+        <a
+                href="https://www.bnbchain.org"
+                title="Documentation"
+                class="md-header__button md-logo"
+                aria-label="Documentation"
+                data-md-component="logo"
+        >
+            
+  <img src="../../../assets/logo.svg" alt="logo">
+
+        </a>
+
+        <!-- Button to open drawer -->
+        <label class="md-header__button md-icon" for="__drawer">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+        </label>
+
+        <!-- Header title -->
+        <div class="md-header__title" data-md-component="header-title">
+            <div class="md-header__ellipsis">
+                <div class="md-header__site_name">
+                  <span class="md-ellipsis">
+                    Documentation
+                  </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color palette toggle -->
+        
+            
+                <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 1 0 0 11Zm-5.657.157a.75.75 0 0 1 0 1.06l-1.768 1.768a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.767-1.768a.75.75 0 0 1 1.061 0ZM3.515 3.515a.75.75 0 0 1 1.06 0l1.768 1.768a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L3.515 4.575a.75.75 0 0 1 0-1.06ZM12 0a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 12 0ZM4 12a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 4 12Zm8 8a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 12 20Zm12-8a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h2.5A.75.75 0 0 1 24 12Zm-6.343 5.657a.75.75 0 0 1 1.06 0l1.768 1.768a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.768-1.767a.75.75 0 0 1 0-1.061Zm2.828-14.142a.75.75 0 0 1 0 1.06l-1.768 1.768a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l1.767-1.768a.75.75 0 0 1 1.061 0Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.768 3.96v.001l-.002-.005a9.08 9.08 0 0 0-.218-.779c-.13-.394.21-.8.602-.67.29.096.575.205.855.328l.01.005A10.002 10.002 0 0 1 12 22a10.002 10.002 0 0 1-9.162-5.985l-.004-.01a9.722 9.722 0 0 1-.329-.855c-.13-.392.277-.732.67-.602.257.084.517.157.78.218l.004.002A9 9 0 0 0 14.999 6a9.09 9.09 0 0 0-.231-2.04ZM16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1 0 16.425 4.74c.05.413.075.833.075 1.259Z"/></svg>
+      </label>
+    
+  
+</form>
+            
+        
+
+        <!-- User preference: color palette -->
+        
+            <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+        
+
+        <!-- Site language selector -->
+        
+
+        <!-- Button to open search modal -->
+        
+            <label class="md-header__button md-icon" for="__search">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+            </label>
+
+            <!-- Search interface -->
+            <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5.5a3.498 3.498 0 0 1-6.062 2.385l-5.112 3.021a3.498 3.498 0 0 1 0 2.188l5.112 3.021a3.5 3.5 0 1 1-.764 1.29l-5.112-3.02a3.499 3.499 0 1 1-3.843-5.642 3.499 3.499 0 0 1 3.843.872l5.112-3.021A3.5 3.5 0 1 1 20 5.5Zm-1.5 13a2 2 0 1 0-3.999-.001 2 2 0 0 0 3.999.001Zm0-13a2 2 0 1 0-3.999-.001A2 2 0 0 0 18.5 5.5ZM5.5 14a2 2 0 1 0 .001-3.999A2 2 0 0 0 5.5 14Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+        <!-- Repository information -->
+        
+        <div class="md-header__source">
+            <a href="https://github.com/bnb-chain/bnbchain-doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BNB Chain GitHub
+  </div>
+</a>
+        </div>
+        
+    </nav>
+
+    <!-- Navigation tabs (sticky) -->
+    
+        
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../announce/" class="md-tabs__link">
+          
+  
+    
+  
+  Announcements
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../bc_fusion/" class="md-tabs__link">
+          
+  
+    
+  
+  BNB Chain Fusion
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  BNB Smart Chain
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../bnb_opbnb/" class="md-tabs__link">
+          
+  
+    
+  
+  BNB opBNB
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../bnb_greenfield/" class="md-tabs__link">
+          
+  
+    
+  
+  BNB Greenfield
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+    
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.bnbchain.org" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bnb-chain/bnbchain-doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BNB Chain GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../announce/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Announcements
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../bc_fusion/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    BNB Chain Fusion
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    BNB Smart Chain
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            BNB Smart Chain
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Developers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ecosystem
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Ecosystem
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    <span class="md-ellipsis">
+      About
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers-of-bsc-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layers of BSC Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layers of BSC Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explorer-and-wallets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explorer and Wallets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrastructure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-apis-and-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools, APIs and Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dapps-infra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dapps infra
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rpc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faucet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Faucet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../node_operators/node_best_practices/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Node Operators
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Staking
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Staking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../staking/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../staking/user-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../staking/developer-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Staking dApps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Governance
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Governance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance/user-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance/apis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Governance APIs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Validator
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Validator
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validator/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validator/run-val/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Run Validator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validator/create-val/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create Validator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validator/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secure Validator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validator/manage-keys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../validator/mev/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MEV
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../slashing/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Slashing
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Slashing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slashing/slash-rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slash Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slashing/monitor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slash Monitor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../bnb_opbnb/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    BNB opBNB
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../bnb_greenfield/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    BNB Greenfield
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    <span class="md-ellipsis">
+      About
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers-of-bsc-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layers of BSC Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layers of BSC Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explorer-and-wallets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explorer and Wallets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infrastructure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-apis-and-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools, APIs and Languages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dapps-infra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dapps infra
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/bnb-chain/bnbchain-doc/edit/main/docs/bnb_smart_chain/developers/ecosystem.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<div><h1 id="bnb-chain-development-tools">BNB Chain Development Tools<a class="headerlink" href="#bnb-chain-development-tools" title="Link to this section">¶</a></h1>
+<p>In order to check the latest updates on the ecosystem of BNB Chain, visit our <a href="https://github.com/bnb-chain/bsc-ecosystem">official GitHub Page</a>.</p>
+<p>The goal of this page is to provide the current status of the open-source BNB Smart Chain Tech Stack and highlight the potential interesting projects that are most demanded by the BSC community and ecosystem.  </p>
+<h2 id="about">About<a class="headerlink" href="#about" title="Link to this section">¶</a></h2>
+<p>BNB Smart Chain is a 100% EVM compatible blockchain, and is one of the prime choices for decentralized application (dApp) development within many possible verticals including DeFi, NFT, Gaming, and many others.</p>
+<p>To get a better understanding of the current BSC landscope, we divide each of the layers into the various components which we feel are most important. We then highlight some of the existing projects as well as <strong>some potentially interesting</strong> projects that we would like to fund by Binance Accelerator Funds. If you see a component with 0 or 1 existing projects then it’s likely that we would consider grant support in this area. By describing our areas of priority in detail we do not wish to preclude grant applications that address different areas that we may not have thought of. We would like to fund all projects that bring value to the ecosystem.</p>
+<blockquote>
+<p>📝 <em>This is a living document and we are relying on our community to contribute to this and help maintain it. Please feel free to make edits and additions via pull requests.</em></p>
+</blockquote>
+<h2 id="layers-of-bsc-stack">Layers of BSC Stack<a class="headerlink" href="#layers-of-bsc-stack" title="Link to this section">¶</a></h2>
+<p>In the below sections you can find a list of different layers of the BSC Stack.</p>
+<h3 id="explorer-and-wallets">Explorer and Wallets<a class="headerlink" href="#explorer-and-wallets" title="Link to this section">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Components</strong></th>
+<th><strong>Existing Projects</strong></th>
+<th><strong>Potentially Interesting Projects</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Desktop Wallets</strong></td>
+<td><a href="https://smart-binance.portonvictor.org/">Wise Safe</a> (a port of Gnosis Safe), <a href="https://www.tokenpocket.pro/en/download/pc">TokenPocket</a>, <a href="https://infinitywallet.io/download/">infinity Wallet</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Browser Extensions</strong></td>
+<td><a href="https://chrome.google.com/webstore/detail/binance-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp">Binance Wallet</a>, <a href="https://metamask.io/">MetaMask</a>, <a href="https://mathwallet.xyz/en/">MathWallet</a>, <a href="https://www.safepal.io/">SafePal</a>, <a href="https://bitkeep.com/">BitKeep</a>, <a href="https://coin98.com/wallet">Coin98</a>, <a href="https://rabby.io/">Rabby Wallet</a>, <a href="https://onto.app/">Onto</a>, <a href="https://slope.finance/">Slope</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Mobile Wallets</strong></td>
+<td><a href="https://mathwallet.xyz/en/">MathWallet</a>, <a href="https://trustwallet.com/">TrustWallet</a>, <a href="https://bitkeep.com/">BitKeep</a>, <a href="https://www.tokenpocket.pro/">TokenPocket</a>, <a href="https://www.safepal.io/">SafePal</a>, <a href="https://www.onto.app/en">ONTO Wallet</a>, <a href="https://1inch.io/wallet/">1Inch Wallet</a>, <a href="https://coin98.com/wallet">Coin98</a>, <a href="https://onto.app/">Onto</a>, <a href="https://slope.finance/">Slope</a>, <a href="https://gemwallet.com">Gem Wallet</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Web (burner) Wallets</strong></td>
+<td><a href="https://toruswallet.io/">Torus</a>,<a href="https://www.myetherwallet.com/">MyEtherWallet (MEW)</a>, <a href="https://guarda.com/coins/binance-coin-wallet/">Guarda</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>CLI Wallet</strong></td>
+<td><a href="https://github.com/bnb-chain/bsc">geth</a>, <a href="https://github.com/dapphub/dapptools/tree/master/src/seth">Seth</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Wallet SDKs</strong></td>
+<td><a href="https://github.com/aragon/use-wallet/tree/master/examples">BSC Connector</a>, <a href="https://www.venly.io/product-wallet">Venly</a>, <a href="https://sequence.app/">Sequence.app</a>, <a href="https://web3auth.io/">Web3Auth</a>, <a href="https://particle.network/">Particle Network</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Multisignature Wallets</strong></td>
+<td><a href="https://github.com/gnosis/MultiSigWallet">MultiSigWallet</a></td>
+<td><a href="https://gnosis-safe.io/">Gnosis</a>, <a href="https://www.qredo.com/">Qredo</a></td>
+</tr>
+<tr>
+<td><strong>Hardware Wallets</strong></td>
+<td><a href="https://www.ledger.com/ethereum-wallet">Ledger</a>, <a href="https://trezor.io/">Trezor</a>, <a href="https://safepal.io/">SafePal</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Block Explorers</strong></td>
+<td><a href="https://bscscan.com/">BSCScan</a>, <a href="https://bsctrace.com/">BSCtrace</a>, <a href="https://bnb.nftscan.com/">NFTscan</a>, <a href="https://binance.mintscan.io/">Mintscan</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Validator Dashboards</strong></td>
+<td><a href="https://bscscan.com/validatorset/">BSCScan</a>, <a href="https://www.binance.org/en/staking">BSC-Staking</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Governance Dashboards</strong></td>
+<td></td>
+<td>UI for BSC proposal/vote</td>
+</tr>
+<tr>
+<td><strong>BNBChain List Explorer</strong></td>
+<td><a href="https://www.bnbchainlist.org/">BNBChain List</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="infrastructure">Infrastructure<a class="headerlink" href="#infrastructure" title="Link to this section">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Components</strong></th>
+<th><strong>Existing Projects</strong></th>
+<th><strong>Potentially Interesting Projects</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API/Node Access</strong></td>
+<td><a href="https://nodereal.io/">Nodereal</a>, <a href="https://www.ankr.com/">Ankr</a>, <a href="https://chainstack.com/build-better-with-binance-smart-chain/">Chainstack</a>, <a href="https://nownodes.io/blog/binance-smart-chain-an-introduction">NowNodes</a>, <a href="https://www.quicknode.com/">QuickNode</a>, <a href="https://www.covalenthq.com/">Covalent</a>, <a href="https://infstones.com/">Infstones</a>, <a href="http://moralis.io/">Moralis</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NFT APIs</strong></td>
+<td><a href="https://moralis.io/api/nft">Moralis</a>, <a href="https://bnb.nftscan.com/">NFTScan</a>, <a href="https://blockvision.org/">BlockVision</a>, <a href="https://www.venly.io/">Venly</a>, <a href="https://www.gomu.co/">Gomu</a>, <a href="https://bounce.finance/">Bounce Finance</a>, <a href="https://nftrade.com/">NFTrade</a>, <a href="https://subquery.network/">SubQuery</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Archive Node Service</strong></td>
+<td><a href="https://chainstack.com/build-better-with-binance-smart-chain/">Chainstack</a>, <a href="https://infstones.com/">InfStones</a>, <a href="https://www.quicknode.com/">QuickNode</a>, <a href="https://docs.nodereal.io/nodereal/meganode/archive-node">Nodereal’s Meganode</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Public RPC Endpoints</strong></td>
+<td><a href="../rpc/">RPC Endpoints</a></td>
+<td>More public nodes are encouraged</td>
+</tr>
+<tr>
+<td><strong>Community Polling Dashboard</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Gas Station Network</strong></td>
+<td><a href="https://opengsn.org/">opengsn</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Faucet</strong></td>
+<td><a href="https://www.bnbchain.org/en/testnet-faucet">BSC Test Faucet</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Browser</strong></td>
+<td><a href="https://www.opera.com/crypto/">Opera</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Dapp Store</strong></td>
+<td><a href="https://dappbay.bnbchain.org/">Dapp Bay</a>, <a href="https://magicsquare.io/">Magic Square</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tools-apis-and-languages">Tools, APIs and Languages<a class="headerlink" href="#tools-apis-and-languages" title="Link to this section">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Components</strong></th>
+<th><strong>Existing Projects</strong></th>
+<th><strong>Potentially Interesting Projects</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Smart Contract Languages</strong></td>
+<td><a href="https://solidity.readthedocs.io/en/latest/">Solidity</a>, <a href="https://vyper.readthedocs.io/en/latest/">Vyper</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Dev Frameworks</strong></td>
+<td><a href="https://trufflesuite.com/">Truffle</a>, <a href="https://github.com/embark-framework/embark">Embark</a>, <a href="https://getwaffle.io/">Waffle</a>, <a href="https://dapp.tools/dapp/">Dapp</a>, <a href="https://openzeppelin.com/sdk/">OpenZeppelin SDK</a>,<a href="https://hardhat.org/">hardhat</a>, <a href="https://www.starton.io/">Starton</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>IDEs</strong></td>
+<td><a href="https://github.com/ObsidianLabs/BSC-Studio">BSC Studio</a>,<a href="https://remix.ethereum.org/">Remix</a>,<a href="https://jetbrains.com/idea/">Intellij Solidity Plugin</a>, <a href="https://eth.chainide.com/project/welcome">ChainIDE</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Lint Tools</strong></td>
+<td><a href="https://github.com/protofire/solhint">Solhint</a>, <a href="https://github.com/duaraghav8/Ethlint">Ethlint</a>, <a href="https://github.com/trailofbits/manticore">Manticore</a>, <a href="https://github.com/crytic/slither">Slither</a>, <a href="https://github.com/crytic/echidna">Echidna</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Testing Tools</strong></td>
+<td><a href="https://github.com/0xProject/0x-monorepo/tree/development/packages/sol-coverage">Solidity code coverage</a>, <a href="https://github.com/EricR/sol-function-profiler">Solidity function profiler</a>, <a href="https://github.com/ethereum/eth-tester">eth-tester</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Security Tools</strong></td>
+<td><a href="https://mythx.io/">MythX</a>, <a href="https://github.com/ConsenSys/mythril">Mythril</a>, <a href="https://github.com/melonproject/oyente">Oyente</a>, <a href="https://securify.chainsecurity.com/">Securify</a>, <a href="https://github.com/raineorshine/solgraph">Solgraph</a>, <a href="https://github.com/SRI-CSL/solidity/">solc-verify</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ABI (Application Binary Interface) Tools</strong></td>
+<td><a href="https://github.com/ConsenSys/abi-decoder">ABI decoder</a>, <a href="https://github.com/0xProject/0x-monorepo/tree/development/packages/abi-gen">ABI-gen</a>, <a href="https://github.com/hiddentao/ethereum-abi-ui">Ethereum ABI UI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Monitoring</strong></td>
+<td><a href="https://github.com/Neufund/smart-contract-watch">Neufund - Smart Contract Watch</a>, <a href="https://github.com/poanetwork/blockscout">BlockScout</a>, <a href="https://terminal.co/">Terminal</a>, <a href="https://github.com/HydroProtocol/ethereum-watcher">Ethereum-watcher</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Frontend BSC APIs</strong></td>
+<td><a href="https://github.com/ethereum/web3.js/">Web3.js</a>, <a href="https://github.com/ethjs">Eth.js</a>, <a href="https://github.com/ethers-io/ethers.js/">Ethers.js</a>, <a href="https://github.com/paritytech/js-libs/tree/master/packages/light.js">light.js</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Backend BSC APIs</strong></td>
+<td><a href="https://github.com/ethereum/web3.py">Web3.py</a>, <a href="https://github.com/sc0Vu/web3.php">Web3.php</a>, <a href="https://github.com/web3j/web3j">Java Web3</a>, <a href="https://nethereum.com/">Net Web3</a>, <a href="https://github.com/EthWorks/ethereum.rb">Ruby Web3</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Goto <a href="https://github.com/bnb-chain/bsc-ecosystem/blob/master/BSC_Develop_Ecosystem.md">BSC Developer Ecosystem</a> to navigate the full list.</p>
+<h3 id="dapps-infra">Dapps infra<a class="headerlink" href="#dapps-infra" title="Link to this section">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Components</strong></th>
+<th><strong>Existing Projects</strong></th>
+<th><strong>Potentially Interesting Projects</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Analytics &amp; Visualization</strong></td>
+<td><a href="https://thegraph.com/en/">The Graph</a>,<a href="https://dappradar.com/rankings/protocol/binance-smart-chain">DappRadar</a>,<a href="https://www.dapp.com/search_product?chain=BSC">dapp.com</a>,<a href="https://coinmarketcap.com/yield-farming/">CMC</a>,<a href="https://dapp.review/explore/bsc">dapp.review</a>,<a href="https://www.defistation.io/">DefiStation</a>,<a href="https://bitquery.io/">BitQuery</a>,<a href="https://www.parsiq.io/">PARSIQ</a>, <a href="https://cryptoslam.io/">CryptoSlam</a>, <a href="https://nakji.network/">Nakji</a>, <a href="http://dune.com/">Dune</a>, <a href="https://www.yieldwatch.net/">YeildWatch</a>, <a href="http://debank.com/">DeBank</a>, <a href="http://bloxy.info/">Bloxy</a>, <a href="https://www.footprint.network/about">Footprint Analytics</a>, <a href="https://web3go.xyz/">Web3Go</a>, <a href="https://subquery.network/">SubQuery</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NFT Marketplaces</strong></td>
+<td><a href="http://rareboard.com/">Rareboard</a>, <a href="https://www.venly.io/">Venly</a>, <a href="https://nftrade.com/">NFTrade</a>, <a href="https://www.element.market/bsc">Element</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Oracle</strong></td>
+<td><a href="https://oracle.binance.com/">Binance Oracle</a>, <a href="https://bandprotocol.com/">Band Protocol</a>, <a href="https://chain.link/">ChainLink</a>, <a href="https://pyth.network/">Pyth</a>, <a href="https://supraoracles.com/">Supra</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Archive Data</strong></td>
+<td><a href="https://infstones.com/">InfStones</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Decentralized Storage</strong></td>
+<td><a href="https://ipfs.io/">IPFS</a>, <a href="https://filecoin.io/build/">Filecoin</a>, <a href="https://www.arweave.org/">Arweave</a>, <a href="https://www.pinata.cloud/">pinata.cloud</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Cross Chain Bridges</strong></td>
+<td><a href="https://renproject.io/">renVM</a>, <a href="https://nerve.network/">NerveNetwork</a>,<a href="https://www.poly.network/">PolyNetwork</a>, <a href="https://bridge.orbitchain.io/">Orbit Bridge</a>, <a href="https://cbridge.celer.network/">Celer cbridge</a>, <a href="https://chainhop.exchange/">ChainHop</a>, <a href="https://layerzero.network/">LayerZero</a>, <a href="https://www.hashflow.com/">HashFlow</a> , <a href="https://axelar.network/">Axelar</a></td>
+<td>Decentralized, trustless, Open Access</td>
+</tr>
+<tr>
+<td><strong>Automation</strong></td>
+<td><a href="https://www.gelato.network/">Gelato</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Indexers</strong></td>
+<td><a href="https://subquery.network/">SubQuery</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Browsers</strong></td>
+<td><a href="https://brave.com/">Brave</a>, <a href="https://www.opera.com/">Opera</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Identity/DID/Credentials</strong></td>
+<td><a href="https://ont.io/">Ontology</a>, <a href="https://galaxy.eco/">Galaxy</a>, <a href="https://space.id/">Space ID</a>, <a href="https://cyberconnect.me/">CyberConnect</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Easy Wallet Onboarding</strong></td>
+<td><a href="https://web3auth.io/">Web3auth</a>, <a href="https://www.venly.io/">Venly</a>, <a href="https://sequence.xyz/">Sequence</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Social Networking</strong></td>
+<td><a href="https://prometeus.io/">Prometeus</a>, <a href="https://cyberconnect.me/">CyberConnect</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Gasless Solutions</strong></td>
+<td><a href="http://biconomy.io/">Biconomy</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Governance/DAO</strong></td>
+<td><a href="https://www.tally.xyz/">Tally</a>, <a href="https://collab.land/">Collab.Land</a>, <a href="https://coinshift.xyz/">Coinshift</a>, <a href="https://snapshot.org/#/">Snapshot</a>, <a href="https://www.hq.xyz/">HQ.xyz</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Gaming Related Infrastructure</strong></td>
+<td><a href="https://carv.io/">Carv (Gaming Credential)</a>, <a href="https://www.communitygaming.io/">Community Gaming (Tournament)</a>, <a href="https://game.space/">GameSpace</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Security Audit</strong></td>
+<td><a href="https://www.certik.com/">Certik</a>, <a href="https://peckshield.com/">PeckShield</a>, <a href="https://www.slowmist.com/">SlowMist</a>, <a href="https://www.staginglabs.io/">Staging Labs</a>, <a href="https://gopluslabs.io/">Go+ / Plus</a>, <a href="https://audit.verichains.io/">Verichains</a>, <a href="https://www.hashdit.io/">HashDit</a>, <a href="https://halborn.com/">Halborn</a>, <a href="https://www.trailofbits.com/">Trail of Bits</a>, <a href="https://consensys.net/diligence/">Consensys Diligence</a>, <a href="https://www.zokyo.io/">Zokyo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Payment</strong></td>
+<td><a href="https://www.swft.pro/zh-pc/#/home">SWFT</a>, <a href="https://multisender.app/">MultiSender</a></td>
+<td><a href="https://www.celer.network/">Celer Network</a>, <a href="https://connext.network/">Connext</a></td>
+</tr>
+<tr>
+<td><strong>Payment Gateway</strong></td>
+<td><a href="https://www.binancecnt.com/en">Binance Connect</a>, <a href="https://okse.io/">Okse</a>, <a href="https://www.kado.money/">Kado</a>, <a href="https://www.superfluid.finance/home">SuperFluid</a>, <a href="https://www.getpip.com/">Pip</a>, <a href="https://bifinity.com">Bifinity</a>, <a href="https://www.moonpay.com/">MoonPay</a>, <a href="https://transak.com/">Transak</a></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+<footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../rpc/" class="md-footer__link md-footer__link--next" aria-label="Next: RPC">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                RPC
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+<div class="doc-footer">
+    <div class="doc-footer__inner md-grid">
+        <div>
+            <div>Explore</div>
+            <ul>
+                <li><a href="https://trustwallet.com/" target="_blank">Trust Wallet</a></li>
+                <li><a href="https://www.bnbchain.org/en/binance-wallet" target="_blank">BNB Chain Wallet</a></li>
+                <li><a href="https://dappbay.bnbchain.org/" target="_blank">DappBay</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>Build</div>
+            <ul>
+                <li><a href="https://github.com/bnb-chain/whitepaper" target="_blank">Whitepaper</a></li>
+                <li><a href="https://forum.bnbchain.org/" target="_blank">Build N' Build Forum</a></li>
+                <li><a href="https://www.bnbchain.org/en/bnb-chain-bridges" target="_blank">Bridges</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>Participate</div>
+            <ul>
+                <li><a href="https://www.bnbchain.org/en/events" target="_blank">Events</a></li>
+                <li><a href="https://www.bnbchain.org/en/bsc-mvb-program" target="_blank">MVB Program</a></li>
+                <li><a href="https://www.bnbchain.org/en/hackathon" target="_blank">Hackathon</a></li>
+                <li><a href="https://www.bnbchain.org/en/developers/developer-programs" target="_blank">Developer
+                    Programs</a></li>
+                <li><a href="https://www.bnbchain.org/en/martians-program" target="_blank">Martians Program</a></li>
+                <li><a href="https://bugbounty.bnbchain.org" target="_blank">Bug Bounty</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>About</div>
+            <ul>
+                <li><a href="https://www.bnbchain.org/en/privacy-policy" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://www.bnbchain.org/en/terms" target="_blank">Terms of Use</a></li>
+                <li><a href="https://jobs.bnbchain.org/companies/bnb-chain#content" target="_blank">Careers</a></li>
+                <li><a href="https://www.bnbchain.org/en/official-verification" target="_blank">Verification</a></li>
+                <li><a href="https://www.bnbchain.org/en/contact" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="doc-copyright">
+    <div class="doc-copyright__inner md-grid">
+        © 2024 Bnbchain.org. All rights reserved.
+    </div>
+</div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.integration", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.prune", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.action.edit", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../../../assets/js/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
