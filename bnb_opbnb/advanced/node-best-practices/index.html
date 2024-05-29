@@ -1925,20 +1925,28 @@
 Two storage schemes are available: HBSS (Hash-Based Scheme Storage) and PBSS (Path-Based Scheme Storage).</p>
 <p>The principal distinctions between them lie in their methods of preserving history trie data.</p>
 <p>The Merkle Patricia Trie (MPT), an advanced data structure, is adept at storing and retrieving key-value pairs with efficiency. It amalgamates the principles of a Patricia trie and a Merkle tree to forge a secure and immutable representation of data within the Ethereum Virtual Machine (EVM).</p>
-<p>The MPT endows the following capabilities:
-- Access to historical data: Enables retrieval of an account’s balance at a specified block height, simulation of calls, and debugging of traces at particular block heights, among others.
-- Verification of Inclusion and Exclusion:
-The MPT facilitates proofs of both inclusion and exclusion of key-value pairs, a pivotal feature for transaction verification and blockchain integrity maintenance.</p>
+<p>The MPT endows the following capabilities:</p>
+<ul>
+<li>Access to historical data: Enables retrieval of an account’s balance at a specified block height, simulation of calls, and debugging of traces at particular block heights, among others.</li>
+<li>Verification of Inclusion and Exclusion:
+The MPT facilitates proofs of both inclusion and exclusion of key-value pairs, a pivotal feature for transaction verification and blockchain integrity maintenance.</li>
+</ul>
 <p>Nevertheless, the preservation of entire history trie data on disk can demand substantial resources and may be superfluous for certain applications. opBNB introduces diverse node modes and storage schemes to accommodate a range of requirements.</p>
-<p>The variances between the modes and storage schemes are encapsulated as follows:
-- Archive node mode conserves the complete history trie data. Full node mode archives recent trie data (128 blocks), whereas the fast node mode retains only the current state, excluding trie data.
-    - Functions such as block, transaction, receipt, and log retrieval are supported across all node modes. Since block data is preserved in the block database, it remains unaffected by the trie data storage scheme.
-    - The capability to access historical state data varies by node mode. Archive nodes support comprehensive historical state data retrieval, whereas full and fast nodes facilitate access to recent 128 blocks’ state data.
-    - Trie data-dependent functions like <code>eth_getProof</code>, <code>eth_getStorageAt</code>, etc., are fully supported by Archive nodes. Full nodes offer queries for recent 128 blocks, whereas fast nodes lack this support.
-    - Specifically, given that the transfer from Layer 2 to Layer 1 necessitates <code>eth_getProof</code> data corresponding to the most recent root hash height, we have implemented certain enhancements within the full node configuration to facilitate <code>eth_getProof</code> for the latest root hash height, irrespective of it surpassing the 128-block threshold. Should you require the utilization of your personal node for the assembly of withdrawal proof, the full node mode is at your disposal.
-- PBSS archives trie nodes on disk utilizing encoded paths and specific key prefixes as keys. This method permits PBSS’s Merkle Patricia Trie (MPT) to supersede older data due to the shared key between the account trie and storage trie, enabling <strong>online pruning</strong> and significantly <strong>diminishing data redundancy</strong>.
-    - Archive node mode is only compatible with HBSS, whereas Full and Fast node modes support both HBSS and PBSS.
-    - For further details, please consult the <a href="../run-with-pebbledb-and-pbss/">PBSS document</a>.</p>
+<p>The variances between the modes and storage schemes are encapsulated as follows:</p>
+<ul>
+<li>Archive node mode conserves the complete history trie data. Full node mode archives recent trie data (128 blocks), whereas the fast node mode retains only the current state, excluding trie data.<ul>
+<li>Functions such as block, transaction, receipt, and log retrieval are supported across all node modes. Since block data is preserved in the block database, it remains unaffected by the trie data storage scheme.</li>
+<li>The capability to access historical state data varies by node mode. Archive nodes support comprehensive historical state data retrieval, whereas full and fast nodes facilitate access to recent 128 blocks’ state data.</li>
+<li>Trie data-dependent functions like <code>eth_getProof</code>, <code>eth_getStorageAt</code>, etc., are fully supported by Archive nodes. Full nodes offer queries for recent 128 blocks, whereas fast nodes lack this support.</li>
+<li>Specifically, given that the transfer from Layer 2 to Layer 1 necessitates <code>eth_getProof</code> data corresponding to the most recent root hash height, we have implemented certain enhancements within the full node configuration to facilitate <code>eth_getProof</code> for the latest root hash height, irrespective of it surpassing the 128-block threshold. Should you require the utilization of your personal node for the assembly of withdrawal proof, the full node mode is at your disposal.</li>
+</ul>
+</li>
+<li>PBSS archives trie nodes on disk utilizing encoded paths and specific key prefixes as keys. This method permits PBSS’s Merkle Patricia Trie (MPT) to supersede older data due to the shared key between the account trie and storage trie, enabling <strong>online pruning</strong> and significantly <strong>diminishing data redundancy</strong>.<ul>
+<li>Archive node mode is only compatible with HBSS, whereas Full and Fast node modes support both HBSS and PBSS.</li>
+<li>For further details, please consult the <a href="../run-with-pebbledb-and-pbss/">PBSS document</a>.</li>
+</ul>
+</li>
+</ul>
 <p>Comparative Analysis of Node Modes and Storage Schemes:</p>
 <table>
 <thead>
@@ -2001,9 +2009,11 @@ Once the Fast Node is running, there is no way to switch back to Full Node.
 Need to re-download snapshot data to restore it to Full Node.</em></p>
 <p>For implementation details and further information, refer to <a href="https://github.com/bnb-chain/op-geth/pull/75">the PR</a>.</p>
 <h3 id="full-node">Full Node<a class="headerlink" href="#full-node" title="Link to this section">¶</a></h3>
-<p>Operating a full node is recommended if you require:
-- Enhanced security and reliability assurances. The full node meticulously executes and locally verifies all blocks.
-- The facility to query trie data of the most recent 128 blocks, such as retrieving an account’s balance at a specific block height, simulating calls, and debugging traces.</p>
+<p>Operating a full node is recommended if you require:</p>
+<ul>
+<li>Enhanced security and reliability assurances. The full node meticulously executes and locally verifies all blocks.</li>
+<li>The facility to query trie data of the most recent 128 blocks, such as retrieving an account’s balance at a specific block height, simulating calls, and debugging traces.</li>
+</ul>
 <p>To enable the full node, set the <code>--syncmode full</code> flag in the <code>geth</code> command.</p>
 <p>It is particularly advised to operate a full node with PBSS and pebble to minimize data redundancy and enhance performance.</p>
 <div class="highlight"><pre><span></span><code>--state.scheme path --db.engine pebble
