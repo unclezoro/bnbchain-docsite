@@ -497,8 +497,6 @@
       
         
       
-        
-      
     
     
       
@@ -673,6 +671,8 @@
       
         
           
+        
+      
         
       
         
@@ -922,6 +922,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1035,6 +1039,48 @@
   
   <span class="md-ellipsis">
     Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-concepts/gas-and-fees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gas and Fees
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-concepts/account-abstraction-on-opbnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Abstraction
   </span>
   
 
@@ -1545,9 +1591,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-start-the-development-server" class="md-nav__link">
+  <a href="#step8-start-the-development-server" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 6: Start the development server
+      Step#8: Start the development server
     </span>
   </a>
   
@@ -1651,6 +1697,176 @@
   
   <span class="md-ellipsis">
     Run with PebbleDB and PBSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            FAQs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/protocol-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protocol FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/gas-and-fees-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gas and Fees FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/opbnb-bridge-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    opBNB Bridge FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/cross-chain-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cross Chain FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/build-on-opbnb-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build on opBNB FAQs
   </span>
   
 
@@ -1868,9 +2084,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-6-start-the-development-server" class="md-nav__link">
+  <a href="#step8-start-the-development-server" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 6: Start the development server
+      Step#8: Start the development server
     </span>
   </a>
   
@@ -1946,45 +2162,43 @@ The <code>HelloWorld</code> smart contract is a simple string variable message t
 </li>
 <li>
 <p>Install Truffle globally by running the following command</p>
-</li>
-</ol>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>truffle
 </code></pre></div>
-<ol>
-<li>Create a new directory for your project and navigate into it</li>
-</ol>
+</li>
+<li>
+<p>Create a new directory for your project and navigate into it</p>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>HelloWorldDapp
 <span class="nb">cd</span><span class="w"> </span>HelloWorldDapp
 </code></pre></div>
-<ol>
-<li>Initialize a new Truffle project. Create a <a href="https://trufflesuite.com/docs/truffle/getting-started/creating-a-project.html">bare Truffle project</a> which generates the required directory structure to test and deploy contracts:</li>
-</ol>
-<div class="highlight"><pre><span></span><code>truffle<span class="w"> </span>init
+</li>
+<li>
+<p>Initialize a new Truffle project. Create a <a href="https://trufflesuite.com/docs/truffle/getting-started/creating-a-project.html">bare Truffle project</a> which generates the required directory structure to test and deploy contracts:</p>
+<p></p><div class="highlight"><pre><span></span><code>truffle<span class="w"> </span>init
 </code></pre></div>
-<p>Truffle creates the following directory structure for your project:</p>
+Truffle creates the following directory structure for your project:
 <ul>
 <li><code>contracts/</code>: directory for your <a href="https://trufflesuite.com/docs/truffle/getting-started/interacting-with-your-contracts">Solidity contracts</a>.</li>
 <li><code>migrations/</code>: directory for the <a href="https://trufflesuite.com/docs/truffle/getting-started/running-migrations#migration-files">scriptable deployment files</a>.</li>
 <li><code>test/</code>: directory for files that <a href="https://trufflesuite.com/docs/truffle/testing/testing-your-contracts">test your application and contracts</a>.</li>
-<li>
-<p><code>truffle-config.js</code>: the Truffle <a href="https://trufflesuite.com/docs/truffle/reference/configuration">configuration file</a>.</p>
-</li>
-<li>
-<p>Install Create React App globally by running the following command</p>
-</li>
+<li><code>truffle-config.js</code>: the Truffle <a href="https://trufflesuite.com/docs/truffle/reference/configuration">configuration file</a>.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>create-react-app
+</li>
+<li>
+<p>Install Create React App globally by running the following command
+   </p><div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>create-react-app
 </code></pre></div>
-<ol>
-<li>Create the React app frontend using the following command</li>
+</li>
+<li>
+<p>Create the React app frontend using the following command
+   </p><div class="highlight"><pre><span></span><code>npx<span class="w"> </span>create-react-app<span class="w"> </span>frontend
+</code></pre></div>
+</li>
+<li>
+<p>Navigate into the client directory using the following command
+   </p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>frontend
+</code></pre></div>
+</li>
 </ol>
-<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>create-react-app<span class="w"> </span>frontend
-</code></pre></div>
-<ol>
-<li>Navigate into the client directory using the following command</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>frontend
-</code></pre></div>
 <h3 id="step2-install-hdwallet-provider">Step#2: Install <code>hdwallet-provider​</code><a class="headerlink" href="#step2-install-hdwallet-provider" title="Link to this section">¶</a></h3>
 <p><code>hdwallet-provider</code> is a separate package that signs transactions for addresses derived from a 12 or 24-word mnemonic. By default, the <code>hdwallet-provider</code> uses the first address generated from the mnemonic. However, this is configurable. For more information, refer to the Truffle <code>hdwallet-provider</code> repository. Run the following command to install <code>hdwallet-provider</code></p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span>npm<span class="w"> </span>install<span class="w"> </span>@truffle/hdwallet-provider
@@ -2024,8 +2238,8 @@ The <code>HelloWorld</code> smart contract is a simple string variable message t
 </code></pre></div>
 <h3 id="step5-configure-truffle-for-use-with-opbnb">Step#5: Configure Truffle for use with opBNB<a class="headerlink" href="#step5-configure-truffle-for-use-with-opbnb" title="Link to this section">¶</a></h3>
 <ol>
-<li>Open the <code>truffle-config.js</code> file and add the following code:</li>
-</ol>
+<li>
+<p>Open the <code>truffle-config.js</code> file and add the following code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">HDWalletProvider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">"@truffle/hdwallet-provider"</span><span class="p">);</span>
 <span class="c1">// create a file at the root of your project and name it .env -- there you can set process variables</span>
 <span class="c1">// like the mnemonic etc. Note: .env is ignored by git to keep your private information safe</span>
@@ -2067,26 +2281,30 @@ The <code>HelloWorld</code> smart contract is a simple string variable message t
 <span class="w">  </span><span class="p">},</span>
 <span class="p">};</span>
 </code></pre></div>
+</li>
+</ol>
 <h3 id="step6-deploy-the-smart-contract-on-opbnb">Step#6: Deploy the smart contract on opBNB<a class="headerlink" href="#step6-deploy-the-smart-contract-on-opbnb" title="Link to this section">¶</a></h3>
 <ol>
-<li>In the root directory of your project, create a new file named <code>1_deploy_contract.js</code> inside the <code>migrations</code> directory and add the following code:</li>
-</ol>
+<li>
+<p>In the root directory of your project, create a new file named <code>1_deploy_contract.js</code> inside the <code>migrations</code> directory and add the following code:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">HelloWorld</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">artifacts</span><span class="p">.</span><span class="nx">require</span><span class="p">(</span><span class="s2">"HelloWorld"</span><span class="p">);</span>
 
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">deployer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">deployer</span><span class="p">.</span><span class="nx">deploy</span><span class="p">(</span><span class="nx">HelloWorld</span><span class="p">,</span><span class="w"> </span><span class="s2">"Hello, World!"</span><span class="p">);</span>
 <span class="p">};</span>
 </code></pre></div>
-<ol>
-<li>Deploy the smart contract to the opBNB testnet by running the following command</li>
-</ol>
+</li>
+<li>
+<p>Deploy the smart contract to the opBNB testnet by running the following command</p>
 <div class="highlight"><pre><span></span><code>truffle<span class="w"> </span>migrate<span class="w"> </span>--network<span class="w"> </span>opBNBTestnet
 </code></pre></div>
 <p><img alt="deploy-smart-contract" src="../../img/opBNB-deploy-contract.PNG"></p>
+</li>
+</ol>
 <h3 id="step7-set-up-the-react-frontend">Step#7: Set up the React frontend<a class="headerlink" href="#step7-set-up-the-react-frontend" title="Link to this section">¶</a></h3>
 <ol>
-<li>Inside the <code>frontend/src</code> directory, replace the contents of the <code>App.js</code> file with the following code:</li>
-</ol>
+<li>
+<p>Inside the <code>frontend/src</code> directory, replace the contents of the <code>App.js</code> file with the following code:</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useEffect</span><span class="p">,</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
 <span class="k">import</span><span class="w"> </span><span class="nx">Web3</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"web3"</span><span class="p">;</span>
 <span class="k">import</span><span class="w"> </span><span class="nx">HelloWorldContract</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./contracts/HelloWorld.json"</span><span class="p">;</span>
@@ -2177,9 +2395,9 @@ The <code>HelloWorld</code> smart contract is a simple string variable message t
 
 <span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
 </code></pre></div>
-<ol>
-<li>Replace the contents of the <code>App.css</code> file with the following code:</li>
-</ol>
+</li>
+<li>
+<p>Replace the contents of the <code>App.css</code> file with the following code:</p>
 <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">App</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
 <span class="p">}</span>
@@ -2238,34 +2456,38 @@ The <code>HelloWorld</code> smart contract is a simple string variable message t
 <span class="w">  </span><span class="kp">-moz-</span><span class="n">osx-font-smoothing</span><span class="p">:</span><span class="w"> </span><span class="n">grayscale</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="step-6-start-the-development-server">Step 6: Start the development server<a class="headerlink" href="#step-6-start-the-development-server" title="Link to this section">¶</a></h3>
-<ol>
-<li>In the frontend directory, install the required dependencies by running the following command</li>
+</li>
 </ol>
+<h3 id="step8-start-the-development-server">Step#8: Start the development server<a class="headerlink" href="#step8-start-the-development-server" title="Link to this section">¶</a></h3>
+<ol>
+<li>
+<p>In the frontend directory, install the required dependencies by running the following command</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install
 </code></pre></div>
-<ol>
-<li>Start the React development server:</li>
-</ol>
+</li>
+<li>
+<p>Start the React development server:</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>start
 </code></pre></div>
-<ol>
-<li>Visit <code>http://localhost:3000</code> in your browser, and you should see the <code>HelloWorld</code> dApp with the current message and the ability to update it.</li>
-</ol>
-<p><em>Make sure you have the MetaMask extension installed and set to the opBNB testnet.</em></p>
-<p><img alt="helloworld-opbnb-ui" src="../../img/opbnb-helloworld-ui.PNG"></p>
-<ol>
-<li>When you enter a new message and click the update button, if your dapp is already not connected to Metamask wallet, you will get a Metamask notification asking for permission to connect your wallet to the dapp.</li>
-</ol>
+</li>
+<li>
+<p>Visit <code>http://localhost:3000</code> in your browser, and you should see the <code>HelloWorld</code> dApp with the current message and the ability to update it.</p>
+<p><em>Make sure you have the MetaMask extension installed and set to the opBNB testnet.</em>
+<img alt="helloworld-opbnb-ui" src="../../img/opbnb-helloworld-ui.PNG"></p>
+</li>
+<li>
+<p>When you enter a new message and click the update button, if your dapp is already not connected to Metamask wallet, you will get a Metamask notification asking for permission to connect your wallet to the dapp.</p>
 <p><img alt="connect-metamask" src="../../img/opbnb-connect-wallet.PNG"></p>
-<ol>
-<li>It will also ask for your confirmation to confirm the transaction. Proceed by clicking the confirm button.</li>
-</ol>
+</li>
+<li>
+<p>It will also ask for your confirmation to confirm the transaction. Proceed by clicking the confirm button.</p>
 <p><img alt="opbnb-metamask-tx" src="../../img/opbnb-metamask-tx.PNG"></p>
-<ol>
-<li>Once the transaction is confirmed, click the <code>Refresh</code> button to load the new message.</li>
-</ol>
+</li>
+<li>
+<p>Once the transaction is confirmed, click the <code>Refresh</code> button to load the new message.</p>
 <p><img alt="helloworld-opbnb-output-ui" src="../../img/opbnb-helloworld-ui-2.PNG"></p>
+</li>
+</ol>
 <h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Link to this section">¶</a></h2>
 <p>In this tutorial, we provided a step-by-step guide on how to develop, deploy, and interact with a smart contract on the opBNB network. We used the Truffle IDE for compiling and deploying the smart contract. We also build a React frontend to interact with the deployed smart contract, i.e., read from and write to the opBNB blockchain.</p></div>
 

@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.bnbchain.org/announce/feynman_bsc/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.bnbchain.org/announce/haber_bsc/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
@@ -511,6 +516,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.bnbchain.org/bnb_opbnb/core-concepts/account-abstraction-on-opbnb/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.bnbchain.org/bnb_opbnb/core-concepts/gas-and-fees/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.bnbchain.org/bnb_opbnb/core-concepts/opbnb-metrics/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
@@ -576,6 +591,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.bnbchain.org/bnb_opbnb/faq/build-on-opbnb-faqs/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.bnbchain.org/bnb_opbnb/faq/cross-chain-faqs/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.bnbchain.org/bnb_opbnb/faq/gas-and-fees-faqs/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.bnbchain.org/bnb_opbnb/faq/opbnb-bridge-faqs/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.bnbchain.org/bnb_opbnb/faq/protocol-faqs/</loc>
+         <lastmod>2024-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.bnbchain.org/bnb_opbnb/get-started/deposit-to-opbnb/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
@@ -602,11 +642,6 @@
     </url>
     <url>
          <loc>https://docs.bnbchain.org/bnb_smart_chain/overview/</loc>
-         <lastmod>2024-05-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.bnbchain.org/bnb_smart_chain/developers/ecosystem/</loc>
          <lastmod>2024-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>

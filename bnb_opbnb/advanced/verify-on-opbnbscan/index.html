@@ -497,8 +497,6 @@
       
         
       
-        
-      
     
     
       
@@ -673,6 +671,8 @@
       
         
           
+        
+      
         
       
         
@@ -922,6 +922,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1035,6 +1039,48 @@
   
   <span class="md-ellipsis">
     Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-concepts/gas-and-fees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gas and Fees
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core-concepts/account-abstraction-on-opbnb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Abstraction
   </span>
   
 
@@ -1563,6 +1609,176 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            FAQs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/protocol-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protocol FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/gas-and-fees-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gas and Fees FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/opbnb-bridge-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    opBNB Bridge FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/cross-chain-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cross Chain FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/build-on-opbnb-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build on opBNB FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1789,9 +2005,12 @@
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>truffle<span class="w"> </span>run<span class="w"> </span>verify<span class="w"> </span><span class="o">{{</span>Your-Contract-Name<span class="o">}}</span><span class="w"> </span>--network<span class="w"> </span>dashboard
 </code></pre></div>
 <p>Then you can go to the <a href="https://testnet.opbnbscan.com/address/0x57996bA7FC3F0C61E7A949ac050b9E2437eA1972?p=1&amp;tab=Contract">opBNBScan explorer</a> to check if your smart contract has been verified.</p>
-<p><em>Note: For the mainnet contract verification, please change the following URLs:
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>For the mainnet contract verification, please change the following URLs:
 url: “<a href="https://opbnb-testnet-rpc.bnbchain.org/">https://opbnb-testnet-rpc.bnbchain.org/</a>” change to “<a href="https://opbnb-mainnet-rpc.bnbchain.org/">https://opbnb-mainnet-rpc.bnbchain.org/</a>”
-apiUrl: ‘<a href="https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/">https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/</a>’ change to ‘<a href="https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-mainnet/contract/">https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-mainnet/contract/</a>‘</em></p></div>
+apiUrl: ‘<a href="https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/">https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/</a>’ change to ‘<a href="https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-mainnet/contract/">https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-mainnet/contract/</a>‘</p>
+</div></div>
 
 
 
