@@ -4,8 +4,8 @@
   <ShortName>BNB Chain Documentation</ShortName>
   <Description>Search BNB Chain Documentation</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://docs.bnbchain.org/img/icon/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://docs.bnbchain.org/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs.bnbchain.org/opensearch.xml" />
-  <moz:SearchForm>https://docs.bnbchain.org/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://docs.bnbchain.org/bnbchain-docsite/img/icon/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://docs.bnbchain.org/bnbchain-docsite/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://docs.bnbchain.org/bnbchain-docsite/opensearch.xml" />
+  <moz:SearchForm>https://docs.bnbchain.org/bnbchain-docsite/</moz:SearchForm>
 </OpenSearchDescription>
