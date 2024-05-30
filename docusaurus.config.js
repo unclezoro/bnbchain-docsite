@@ -7,13 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'BNB Chain Documentation',
-  url: 'https://docs.bnbchain.org',
+  url: 'https://unclezoro.github.io',
   baseUrl: '/bnbchain-docsite/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/icon/favicon.ico',
-  organizationName: 'bnb-chain',
-  projectName: 'bnb-chain.github.io',
+  organizationName: 'unclezoro',
+  projectName: 'unclezoro.github.io',
   deploymentBranch: 'gh-pages',
   trailingSlash: true,
 
