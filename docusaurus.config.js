@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'BNB Chain Documentation',
   url: 'https://docs.bnbchain.org',
-  baseUrl: '/',
+  baseUrl: '/bnbchain-docsite/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/icon/favicon.ico',
